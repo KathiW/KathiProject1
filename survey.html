@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Developer Survey</title>
+        <link href="css/bootstrap.css" rel="stylesheet" />  
+        <link href="css/bootstrap-responsive.css" rel="stylesheet"/>
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="icon" href="img/favicon.png">
+        <style>
+            body{
+                margin-top:100px;
+            }
+        </style>
+    </head>
+<body>
+    <nav class="navbar navbar-fixed-top">
+        <div class="">
+        <ul class="navbar">
+            <li><a href="https://www.libertymutual.com">Liberty Mutual Home</a></li>
+            <li><a href="index.html">Developer Relations Home</a></li>
+            <li class><a href="survey.html">Developer Survey</a></li>
+        </ul>
+    </div>
+    </nav>
+
+    <main>
+
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <form action="/signup" method="post">
+                        <fieldset>
+                            
+                            <label for="UserInfo_Name">Name:</label>
+                            <input id="UserInfo_FirstName" name="UserInfo.FirstName" type="text" value="">
+                            <label for="UserInfo_Email">Email:</label>
+                            <input id="UserInfo_Email" name="UserInfo.Email" type="text" value="">
+                            <label for="UserInfo_Company">N-Number:</label>
+                            <input id="UserInfo_Company" name="UserInfo.Company" type="text" value="">
+                            <label for="UserInfo_age">Age(optional):</label>
+                            <input id="UserInfo_age" name="UserInfo.Company" type="text" value="">
+                            <label for="UserInfo_option">Which option best desribes your current role as it relates to IT?</label>
+                            <select id="UserInfo_option.SelectedValue" name="UserInfo.option.SelectedValue">
+                                <option disabled="" selected="" value="">Select how your current role relates to IT</option>
+                                <option value="notit">I don't work in IT but I want to</option>
+                                <option value="init">I work in IT</option>
+                                <option value="manager">I am a manager of IT personnel</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="container">
+                                <div class="row">
+                                <div class="span5">
+                            <label for="optionsRadios">Would you recommend employment at Liberty Mutual to an IT
+                                professional?</label>                            
+                            <label class="radio">
+                                <input type="radio" name="optionsRadios" value="option1" checked>
+                                Definately                            
+                            </label>
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                Maybe
+                            </label>
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                                Not sure
+                            </label>
+                                </div>
+                                </div>
+
+                        </div>
+                            <label for="UserInfo_ReduceTech">What current technology at Liberty Mutual do you most feel should be phased out?</label>
+                        <select id="UserInfo_ReduceTech" name="UserInfo.ReduceTech.SelectedValue">
+                                <option disabled="" selected="" value="">Select an option</option>
+                                <option value="ASP">ASP.NET WebForms</option>
+                                <option value="java">Java</option>
+                                <option value="cobol">Cobal</option>
+                                <option value="ssis">SSIS</option>
+                        </select>
+                        <label for="UserInfo_embrace">Which option best desribes your current role as it relates to IT?</label>
+                        <div>
+                            <label class="checkbox inline">
+                                <input type="checkbox" value="react">
+                                React
+                            </label>
+                            <label class="checkbox inline">
+                                <input type="checkbox" value="micro">
+                               Microservices
+                            </label>
+                            <label class="checkbox inline">
+                                <input type="checkbox" value="Golang">
+                               Golang
+                            </label>
+                            <label class="checkbox inline">
+                                <input type="checkbox" value="custom">
+                               Custom Middlewear
+                            </label>
+                        </div>
+                           
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="span6">
+                    <h2>Search</h2>
+                    <form class="form-search">
+                        <input type="search" class="search-query">
+                        <button type="submit" class="btn">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    </body>
+
+
+</html>
